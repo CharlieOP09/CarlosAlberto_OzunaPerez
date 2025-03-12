@@ -13,6 +13,14 @@ except mysql.connector.Error as err:
     print(f"Error al conectar a la base de datos:c : {err}")
     exit()
 
+def get_db_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="mysql",
+        database="dbtaller"
+    )
+
 def crear_tipo_proyecto():
     tipo = input("Ingresa el código del tipo de proyecto (máx 10 caracteres): ").strip()
     nombre = input("Ingresa el nombre del tipo de proyecto: ").strip()

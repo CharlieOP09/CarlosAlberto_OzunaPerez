@@ -98,7 +98,7 @@ def eliminar_profesor():
         if cursor.rowcount > 0:
             print("Profesor eliminado correctamente.")
         else:
-            print("No se encontró el profesor.")
+            print("No se encontro el profesor.")
     except mysql.connector.Error as err:
         print(f"Error: {err}")
     finally:
@@ -108,7 +108,7 @@ def eliminar_profesor():
 # Menú principal
 def menu():
     while True:
-        print("\n MENÚ CRUD - Profesores")
+        print("\n MENU CRUD - Profesores")
         print("1️. Crear profesor")
         print("2️. Ver todos los profesores")
         print("3️. Buscar un profesor")
